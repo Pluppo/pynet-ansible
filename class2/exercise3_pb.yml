@@ -1,0 +1,32 @@
+---
+- name: show arp
+  gather_facts: no
+  hosts: cisco
+  vars:
+    ssh:
+      host: "{{ ansible_host }}"
+      username: "{{ ansible_user }}"
+      password: "{{ ansible_ssh_pass }}"
+
+  tasks:
+    - ios_command:
+        provider: "{{ ssh }}"
+        commands: 'show arp'
+      register: 'show_arp'
+
+    - name: show_arp
+      debug:
+        msg: "{{ show_arp }}"
+
+    - set_fact:
+        show_arp_new: "{{ show_arp.stdout_lines[0] }}"
+
+    - name: show_arp_new
+      debug:
+        msg: "{{ show_arp_new }}"
+
+    - name: print line containing 10.220.88.1
+      debug:
+        msg: "{{ item }}"
+      with_items: "{{ show_arp_new }}"
+      when: "'10.220.88.1 ' in item"

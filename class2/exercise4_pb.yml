@@ -1,0 +1,29 @@
+---
+- name: eos_commands
+  gather_facts: no
+  hosts: pynet-sw7
+  vars:
+    eapi:
+      host: "{{ ansible_host }}"
+      username: "{{ ansible_user }}"
+      password: "{{ ansible_ssh_pass }}"
+      transport: eapi
+      validate_certs: no
+
+  tasks:
+    - eos_command:
+        provider: "{{ eapi }}"
+        commands: 'show arp'
+      register: 'show_arp'
+
+    - set_fact:
+        mac_table: "{{ show_arp.stdout[0].ipV4Neighbors }}"
+
+    - set_fact:
+        gateway_mac: "{{ item.hwAddress }}"
+      with_items: "{{ mac_table }}"
+      when: "item.address == '10.220.88.1'"
+
+    - name: Print gateway mac
+      debug:
+        msg: "Gateway MAC is: {{ gateway_mac }}"
