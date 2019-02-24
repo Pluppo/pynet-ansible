@@ -1,0 +1,43 @@
+---
+- name: Get IOS facts v2
+  hosts: cisco
+  vars:
+    ssh:
+      host: "{{ ansible_host }}"
+      username: "{{ ansible_user }}"
+      password: "{{ ansible_ssh_pass }}"
+
+  tasks:
+    - name: Getting IOS facts
+      ios_facts:
+        provider: "{{ ssh }}"
+      tags:
+        - task1
+        - task2
+        - task3
+        - task4
+
+    - name: Print IPv4
+      debug:
+        var: ansible_net_all_ipv4_addresses
+      when: "ansible_net_all_ipv4_addresses[0] == '10.220.88.21'"
+      tags: task1
+
+    - name: Print interface names
+      debug:
+        msg: "{{ item.key }}"
+      with_dict: "{{ ansible_net_interfaces }}"
+      tags: task2
+
+    - name: Print interface names which are up
+      debug:
+        msg: "Active interface {{ item.key }}"
+      with_dict: "{{ ansible_net_interfaces }}"
+      when: item.value.operstatus == 'up'
+      tags: task3
+
+    - name: Print interface names which are up
+      debug:
+        var: ansible_net_model
+      when: "'881' in ansible_net_model"
+      tags: task4

@@ -1,0 +1,10 @@
+---
+- name: print_variable
+  hosts: cisco
+  tasks:
+    - debug:
+        msg: "{{ ansible_host }}"
+    - debug:
+        msg: "{{local_as_number}}"
+    - debug:
+        msg: "{{remote_as_number}}"

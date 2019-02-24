@@ -1,0 +1,5 @@
+---
+- name: ping_play
+  hosts: local:cisco
+  tasks:
+    - ping:

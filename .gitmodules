@@ -1,0 +1,12 @@
+[submodule "ansible-extras/ntc-ansible"]
+	path = ansible-extras/ntc-ansible
+	url = https://github.com/networktocode/ntc-ansible
+[submodule "napalm-ansible"]
+	path = napalm-ansible
+	url = https://github.com/napalm-automation/napalm-ansible
+[submodule "netmiko_tools"]
+	path = netmiko_tools
+	url = https://github.com/ktbyers/netmiko_tools
+[submodule "ntc-templates"]
+	path = ntc-templates
+	url = https://github.com/networktocode/ntc-templates

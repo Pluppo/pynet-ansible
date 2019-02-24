@@ -1,0 +1,16 @@
+---
+- name: Get IOS facts
+  hosts: cisco
+  vars:
+    ssh:
+      host: "{{ ansible_host }}"
+      username: "{{ ansible_user }}"
+      password: "{{ ansible_ssh_pass }}"
+  tasks:
+    - name: Getting IOS facts
+      ios_facts:
+        provider: "{{ ssh }}"
+      tags: facts_only
+    - name: Print serial number
+      debug:
+        var: ansible_net_serialnum
