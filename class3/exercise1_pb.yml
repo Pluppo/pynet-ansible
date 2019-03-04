@@ -1,0 +1,11 @@
+---
+- name: Configure VLANs
+  hosts: nxos
+  vars:
+    vlans: "{{ vlans_common }} + {{ vlans_unique }}"
+  tasks:
+    - nxos_vlan:
+        provider: "{{ provider_nxapi }}"
+        vlan_id: "{{ item.vlan_id }}"
+        name: "{{ item.name }}"
+      with_items: "{{ vlans }}"   

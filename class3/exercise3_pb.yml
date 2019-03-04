@@ -1,0 +1,9 @@
+---
+- name: Configure IP addresses
+  hosts: nxos
+  tasks:
+    - name: Ping IPv4
+      nxos_ping:
+        provider: "{{ provider_nxapi }}"
+        dest: "{{ item.ipv4_remote }}"
+      with_items: "{{ ip_add }}"
