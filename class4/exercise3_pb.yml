@@ -1,0 +1,30 @@
+---
+- name: IOS playbook
+  hosts: pynet-rtr1
+  tasks:
+    - ios_config:
+        provider: "{{ provider_ssh }}"
+        lines:
+          - ip address {{ lo99_ipv4_add }} {{ lo99_ipv4_mask}}
+          - ipv6 address {{ lo99_ipv6_add }}{{ lo99_ipv6_mask}}
+        parents: interface Loopback99
+
+- name: Arista playbook
+  hosts: pynet-sw5
+  tasks:
+    - eos_config:
+        provider: "{{ provider_eapi }}"
+        lines:
+          - ip address {{ lo99_ipv4_add }}{{ lo99_ipv4_mask}}
+          - ipv6 address {{ lo99_ipv6_add }}{{ lo99_ipv6_mask}}
+        parents: interface Loopback99
+
+- name: Nexus playbook
+  hosts: nxos1
+  tasks:
+    - nxos_config:
+        provider: "{{ provider_nxapi }}"
+        lines:
+          - ip address {{ lo99_ipv4_add }}{{ lo99_ipv4_mask}}
+          - ipv6 address {{ lo99_ipv6_add }}{{ lo99_ipv6_mask}}
+        parents: interface loopback99

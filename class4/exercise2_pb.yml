@@ -1,0 +1,10 @@
+---
+- name: Configure static routes
+  hosts: arista
+  tasks:
+    - eos_config:
+        provider: "{{ provider_eapi }}"
+        lines:
+          - name {{ item.name }}
+        parents: vlan {{ item.vlan_id }}
+      with_items: "{{ vlans_common }}"

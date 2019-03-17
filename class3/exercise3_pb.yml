@@ -7,3 +7,9 @@
         provider: "{{ provider_nxapi }}"
         dest: "{{ item.ipv4_remote }}"
       with_items: "{{ ip_add }}"
+    - name: Ping IPv6
+      nxos_command:
+        provider: "{{ provider_ssh }}"
+        commands:
+          - "ping6 {{ item.ipv6_remote }}"
+      with_items: "{{ ip_add }}"

@@ -5,3 +5,8 @@ ip_add:
     ipv4_remote: 10.66.66.2
     ipv6: 2001:db8:6666:200c::1/64
     ipv6_remote: 2001:db8:6666:200c::2
+
+lo99_ipv4_add: 10.1.1.13
+lo99_ipv4_mask: /24
+lo99_ipv6_add: 2001:db8::13
+lo99_ipv6_mask: /64

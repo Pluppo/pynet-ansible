@@ -1,0 +1,10 @@
+---
+- name: IOS playbook
+  hosts: cisco
+  tasks:
+    - name: Set SNMP contact and location
+      ios_config:
+        provider: "{{ provider_ssh }}"
+        lines:
+          - snmp-server contact {{ snmp_contact }}
+          - snmp-server location {{ snmp_location }}

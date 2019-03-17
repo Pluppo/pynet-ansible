@@ -1,0 +1,5 @@
+---
+lo99_ipv4_add: 10.1.1.11
+lo99_ipv4_mask: 255.255.255.0
+lo99_ipv6_add: 2001:DB8::11
+lo99_ipv6_mask: /64

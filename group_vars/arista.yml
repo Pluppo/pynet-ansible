@@ -1,0 +1,22 @@
+---
+provider_ssh:
+  host: "{{ ansible_host }}"
+  username: "{{ ansible_user }}"
+  password: "{{ ansible_ssh_pass }}"
+
+provider_eapi:
+  host: "{{ ansible_host }}"
+  username: "{{ ansible_user }}"
+  password: "{{ ansible_ssh_pass }}"
+  transport: eapi
+  validate_certs: no
+
+vlans_common:
+  - vlan_id: 301
+    name: blue
+  - vlan_id: 302
+    name: red
+  - vlan_id: 303
+    name: green
+  - vlan_id: 304
+    name: black
