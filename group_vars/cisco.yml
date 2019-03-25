@@ -4,5 +4,11 @@ provider_ssh:
   username: "{{ ansible_user }}"
   password: "{{ ansible_ssh_pass }}"
 
+napalm_creds:
+  hostname: "{{ ansible_host }}"
+  username: "{{ ansible_user }}"
+  password: "{{ ansible_ssh_pass }}"
+  dev_os: "ios"
+
 snmp_location: Seattle, WA, USA
 snmp_contact: erik_ingeberg@hotmail.com

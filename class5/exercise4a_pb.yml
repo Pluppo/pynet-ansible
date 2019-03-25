@@ -1,0 +1,11 @@
+---
+- name: Config replace 
+  hosts: pynet-sw8
+  tasks:
+
+  - napalm_install_config:
+      provider: "{{ napalm_creds }}"
+      config_file: "CFGS/{{ inventory_hostname }}-replace.txt"
+      commit_changes: False
+      replace_config: False
+      diff_file: "DIFFS/{{ inventory_hostname }}.txt"

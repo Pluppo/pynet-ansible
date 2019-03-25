@@ -1,0 +1,25 @@
+---
+- name: Configure BGP
+  hosts: nxos
+  tasks:
+
+  - napalm_install_config:
+      provider: "{{ napalm_creds }}"
+      config_file: "CFGS/{{ inventory_hostname }}-bgp-merge.txt"
+      commit_changes: True
+      replace_config: False
+      diff_file: "DIFFS/{{ inventory_hostname }}.txt"
+
+  - pause:
+      seconds: 5
+
+  - napalm_get_facts:
+      provider: "{{ napalm_creds }}"
+      filter: "bgp_neighbors"
+
+  - set_fact:
+      bgp_state: "{{ item.value.is_up }}"
+    with_dict: "{{ napalm_bgp_neighbors['global']['peers'] }}"
+
+  - assert:
+      that: bgp_state == true

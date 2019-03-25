@@ -1,0 +1,25 @@
+---
+- name: Configure IP address
+  hosts: nxos
+  tasks:
+
+  - napalm_install_config:
+      provider: "{{ napalm_creds }}"
+      config_file: "CFGS/{{ inventory_hostname }}-merge.txt"
+      commit_changes: True
+      replace_config: False
+      diff_file: "DIFFS/{{ inventory_hostname }}.txt"
+
+  - napalm_get_facts:
+      provider: "{{ napalm_creds }}"
+      filter: "interfaces_ip"
+ 
+  - set_fact:
+      ip_add_mask: "{{ napalm_interfaces_ip['Ethernet2/1']['ipv4'] }}"
+
+  - set_fact:
+      ip_add: "{{ item }}"
+    with_items: "{{ ip_add_mask }}"
+
+  - assert:
+      that: "ip_add in ['10.12.0.1', '10.12.0.2']"

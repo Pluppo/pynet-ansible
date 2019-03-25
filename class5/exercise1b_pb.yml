@@ -1,0 +1,12 @@
+---
+- name: Get facts with LLDP
+  hosts: cisco
+  tasks:
+
+  - napalm_get_facts:
+      provider: "{{ napalm_creds }}"
+      filter: "lldp_neighbors"
+
+  - set_fact:
+      lldp_info: "{{ napalm_lldp_neighbors[item][0] }}"
+    with_items: "{{ napalm_lldp_neighbors }}"
