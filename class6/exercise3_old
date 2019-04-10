@@ -1,0 +1,32 @@
+---
+- name: Configure NTP servers
+  hosts: nxos1
+  vars:
+    ntp_servers:
+      - "ntp server 10.1.1.1"
+      - "ntp server 10.1.1.2"
+  tasks:
+
+    - name: Configure NTP servers
+      nxos_config:
+        provider: "{{ provider_nxapi }}"
+        lines: "{{ ntp_servers }}"
+
+    - name: Check NTP servers
+      nxos_command:
+        provider: "{{ provider_ssh }}"
+        commands: "sh run | i ntp"
+      register: output
+
+    - set_fact:
+        current_ntp: "{{ output.stdout_lines[0] }}"
+
+    - name: Find extra NTP servers
+      set_fact:
+        extra_ntp_servers: "{{ current_ntp | difference(ntp_servers) }}"
+
+    - name: Remove extra NTP servers
+      nxos_config:
+        provider: "{{ provider_nxapi }}"
+        lines: "no {{ item }}"
+      with_items: "{{ extra_ntp_servers }}"

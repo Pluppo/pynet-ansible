@@ -1,0 +1,29 @@
+---
+- name: Configure NTP servers
+  hosts: nxos1
+  vars:
+    ntp_servers:
+      - "ntp server 10.1.1.1"
+      - "ntp server 10.1.1.2"
+  tasks:
+
+    - name: Configure NTP servers
+      nxos_config:
+        provider: "{{ provider_nxapi }}"
+        lines: "{{ ntp_servers }}"
+
+    - name: Check NTP servers
+      napalm_get_facts:
+        provider: "{{ napalm_creds }}"
+        filter: ntp_servers
+
+    - debug:
+        msg: "{{ napalm_ntp_servers }}"
+
+
+    - debug:
+        msg: "{{ napalm_ntp_servers.keys() }}"
+
+    - set_fact:
+        current_ntp: "{{ napalm_ntp_servers.keys() | list }}"
+

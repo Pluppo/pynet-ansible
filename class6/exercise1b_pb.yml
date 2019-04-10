@@ -1,0 +1,15 @@
+---
+- name: Read show version from file and display output
+  hosts: cisco
+
+  vars:
+    file_name: "{{ inventory_hostname }}-show_version.txt"
+
+  tasks:
+    - name: Read file
+      set_fact:
+        show_version: "{{ lookup('file', file_name) }}"
+
+    - name: Print output
+      debug:
+        msg: "{{ show_version }}"

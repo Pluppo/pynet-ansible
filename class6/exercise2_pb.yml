@@ -1,0 +1,13 @@
+---
+- name: Get mac address
+  hosts: pynet-sw8
+  tasks:
+    - napalm_get_facts:
+        provider: "{{ napalm_creds }}"
+        filter: "mac_address_table"
+
+    - set_fact:
+        mac_address_table: "{{ lookup('template', 'mac_lookup.j2') | from_yaml }}"
+
+    - debug:
+        msg: "{{ mac_address_table }}"
