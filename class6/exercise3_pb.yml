@@ -3,8 +3,9 @@
   hosts: nxos1
   vars:
     ntp_servers:
-      - "ntp server 10.1.1.1"
-      - "ntp server 10.1.1.2"
+      - "ntp server 10.1.1.1 use-vrf default"
+      - "ntp server 10.1.1.2 use-vrf default"
+    ntp_list: "[]"
   tasks:
 
     - name: Configure NTP servers
@@ -17,13 +18,17 @@
         provider: "{{ napalm_creds }}"
         filter: ntp_servers
 
-    - debug:
-        msg: "{{ napalm_ntp_servers }}"
-
-
-    - debug:
-        msg: "{{ napalm_ntp_servers.keys() }}"
-
     - set_fact:
         current_ntp: "{{ napalm_ntp_servers.keys() | list }}"
 
+    - set_fact:
+        current_ntp: "{{ lookup('template', './exercise3_lookup.j2') | from_yaml }}"
+
+    - set_fact:
+        old_ntp: "{{ current_ntp | difference(ntp_servers) }}"
+
+    - name: Remove old NTP servers
+      nxos_config:
+        provider: "{{ provider_nxapi }}"
+        lines: "no {{ item }}"
+      with_items: "{{ old_ntp }}"

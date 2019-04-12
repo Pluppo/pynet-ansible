@@ -5,5 +5,5 @@
     - nxos_config:
         provider: "{{ provider_nxapi }}"
         lines:
-          - ntp server 10.1.1.1
-          - ntp server 10.1.1.2
+          - ntp server 10.1.1.1 use-vrf default
+          - ntp server 10.1.1.2 use-vrf default

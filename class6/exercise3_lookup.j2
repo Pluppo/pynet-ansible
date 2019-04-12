@@ -1,0 +1,4 @@
+---
+{% for ntp_server in current_ntp %}
+- ntp server {{ ntp_server }} use-vrf default
+{% endfor %}

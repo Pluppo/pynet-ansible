@@ -3,8 +3,8 @@
   hosts: nxos1
   vars:
     ntp_servers:
-      - "ntp server 10.1.1.1"
-      - "ntp server 10.1.1.2"
+      - "ntp server 10.1.1.1 use-vrf default"
+      - "ntp server 10.1.1.2 use-vrf default"
   tasks:
 
     - name: Configure NTP servers
@@ -15,7 +15,7 @@
     - name: Check NTP servers
       nxos_command:
         provider: "{{ provider_ssh }}"
-        commands: "sh run | i ntp"
+        commands: "sh run all | i 'ntp server'"
       register: output
 
     - set_fact:
