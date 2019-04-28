@@ -1,4 +1,6 @@
 ---
+platform: ios
+
 provider_ssh:
   host: "{{ ansible_host }}"
   username: "{{ ansible_user }}"

@@ -1,0 +1,29 @@
+---
+- name: Generate config
+  hosts: cisco:nxos:arista
+  tasks:
+    - name: "Generate config files"
+      template:
+        src: ex1_template.j2
+        dest: "{{ inventory_hostname }}.txt"
+
+- name: "Deploy IOS configs"
+  hosts: cisco
+  tasks:
+    - ios_config:
+        provider: "{{ provider_ssh }}"
+        src: "{{ inventory_hostname }}.txt"
+
+- name: "Deploy NXOS configs"
+  hosts: nxos
+  tasks:
+    - nxos_config:
+        provider: "{{ provider_ssh }}"
+        src: "{{ inventory_hostname }}.txt"
+
+- name: "Deploy EOS configs"
+  hosts: arista
+  tasks:
+    - eos_config:
+        provider: "{{ provider_ssh }}"
+        src: "{{ inventory_hostname }}.txt"
