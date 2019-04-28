@@ -1,0 +1,8 @@
+interface {{ bgp_int.name }}
+  ipv6 address {{ bgp_int.ipv6 }}
+  no shutdown
+
+router bgp {{ bgp_as }}
+  router-id {{ bgp_router_id }}
+  neighbor {{ bgp_int.ipv6_remote }} remote-as {{ bgp_as }}
+    address-family ipv6 unicast

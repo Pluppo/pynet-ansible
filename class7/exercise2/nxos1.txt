@@ -1,0 +1,8 @@
+interface Ethernet1/1
+  ipv6 address 2001:db8:6666:200c::1/64
+  no shutdown
+
+router bgp 22
+  router-id 10.66.66.1
+  neighbor 2001:db8:6666:200c::2 remote-as 22
+    address-family ipv6 unicast

@@ -13,6 +13,6 @@ ntp server {{ ntp2 }}
 {% elif platform == "nxos" %}
 ip name-server {{ name_server1 }} {{ name_server2 }}
 ip domain-name {{ default_domain }}
-ntp server {{ ntp1 }}
-ntp server {{ ntp2 }}
+ntp server {{ ntp1 }} use-vrf management
+ntp server {{ ntp2 }} use-vrf management
 {% endif %}

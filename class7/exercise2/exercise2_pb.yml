@@ -1,0 +1,15 @@
+---
+- name: Generate nxos config
+  hosts: nxos
+  tasks:
+    - name: "Generate config files"
+      template:
+        src: ex2_template.j2
+        dest: "{{ inventory_hostname }}.txt"
+
+    - name: "Deploy config"
+      napalm_install_config:
+        provider: "{{ napalm_creds }}"
+        config_file: "{{ inventory_hostname }}.txt"
+        replace_config: false
+        commit_changes: true
