@@ -1,0 +1,8 @@
+ip domain-name {{ default_domain }}
+ip name server {{ name_server1 }} {{ name_server2 }}
+ntp server {{ ntp1 }} vrf management
+ntp server {{ ntp2 }} vrf management
+
+{% include 'nxos-vrf.j2' %}
+
+{% include 'nxos-interfaces.j2' %}

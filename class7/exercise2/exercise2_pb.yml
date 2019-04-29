@@ -13,3 +13,4 @@
         config_file: "{{ inventory_hostname }}.txt"
         replace_config: false
         commit_changes: true
+        diff_file: "DIFFS/{{ inventory_hostname }}.txt"

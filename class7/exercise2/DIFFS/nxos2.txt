@@ -1,0 +1,4 @@
+  ipv6 address 2001:db8:6666:200c::2/64
+  router-id 10.66.66.2
+  neighbor 2001:db8:6666:200c::1 remote-as 22
+    address-family ipv6 unicast

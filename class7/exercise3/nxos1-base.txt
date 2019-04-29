@@ -1,0 +1,257 @@
+
+vrf context management
+  ip route 0.0.0.0/0 10.0.2.2
+vrf context red1
+vrf context red2
+vrf context red3
+
+interface mgmt0
+  vrf member management
+  ip address dhcp
+
+interface Vlan1
+
+interface Ethernet1/1
+  no switchport
+  mac-address 2cc2.604f.feb2
+  ip address 10.10.10.1/24
+  no shutdown
+
+interface Ethernet1/2
+  no switchport
+  mac-address 2cc2.604f.feb2
+  ip address 10.10.20.1/24
+  no shutdown
+
+interface Ethernet1/3
+  no switchport
+  mac-address 2cc2.604f.feb2
+  ip address 10.12.13.14/24
+  no shutdown
+
+interface Ethernet1/4
+  no switchport
+  mac-address 2cc2.604f.feb2
+  ip address 10.10.40.1/24
+  no shutdown
+
+interface Ethernet1/5
+  no switchport
+  mac-address 2cc2.604f.feb2
+  no shutdown
+
+interface Ethernet1/6
+  no switchport
+  mac-address 2cc2.604f.feb2
+  no shutdown
+
+interface Ethernet1/7
+  no switchport
+  mac-address 2cc2.604f.feb2
+  no shutdown
+
+interface Ethernet1/8
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/9
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/10
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/11
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/12
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/13
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/14
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/15
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/16
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/17
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/18
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/19
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/20
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/21
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/22
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/23
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/24
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/25
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/26
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/27
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/28
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/29
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/30
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/31
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/32
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/33
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/34
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/35
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/36
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/37
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/38
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/39
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/40
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/41
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/42
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/43
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/44
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/45
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/46
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/47
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+
+interface Ethernet1/48
+  shutdown
+  no switchport
+  mac-address 2cc2.604f.feb2
+

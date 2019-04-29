@@ -1,0 +1,41 @@
+{% macro port_shutdown() -%}
+  shutdown
+  no switchport
+  mac-address {{ mac_add }}
+{%- endmacro %}
+{% macro port_no_shutdown() -%}
+  no switchport
+  mac-address {{ mac_add }}
+  no shutdown
+{%- endmacro %}
+
+vrf context management
+  ip route 0.0.0.0/0 {{ default_gw }}
+{% for vrf in vrf_list %}
+vrf context {{ vrf }}
+{% endfor %}
+
+interface mgmt0
+  vrf member management
+  ip address dhcp
+
+interface Vlan1
+
+{% for port_number in range(1,5) %}
+interface Ethernet1/{{ port_number}}
+  no switchport
+  mac-address {{ mac_add }}
+  ip address {{ vars['ip' + port_number|string] }}
+  no shutdown
+
+{% endfor %}
+{% for port_number in range(5,8) %}
+interface Ethernet1/{{ port_number}}
+  {{ port_no_shutdown() }}
+
+{% endfor %}
+{% for port_number in range(8,49) %}
+interface Ethernet1/{{ port_number}}
+  {{ port_shutdown() }}
+
+{% endfor %}

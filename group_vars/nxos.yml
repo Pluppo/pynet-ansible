@@ -33,3 +33,10 @@ vlans_common:
 
 snmp_location: Seattle, WA, USA
 snmp_contact: erik_ingeberg@hotmail.com
+
+default_gw: 10.0.2.2
+vrf_list:
+  - red1
+  - red2
+  - red3
+

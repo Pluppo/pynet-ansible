@@ -1,0 +1,8 @@
+---
+- name: Generate nxos config
+  hosts: nxos
+  tasks:
+    - name: "Generate config files"
+      template:
+        src: ex3b_template.j2
+        dest: "{{ inventory_hostname }}.txt"
