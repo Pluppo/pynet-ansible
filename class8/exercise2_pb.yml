@@ -1,0 +1,7 @@
+---
+- name: Cisco credentials test
+  hosts: cisco
+  tasks:
+    - name: Test connection to Cisco
+      ios_facts:
+        provider: "{{ v_provider_ssh }}"

@@ -1,0 +1,37 @@
+---
+- name: Check Arita VLANs
+  hosts: pynet-sw7
+  vars:
+    default_vlans:
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "5"
+      - "6"
+      - "7"
+      - "101"
+      - "201"
+      - "301"
+      - "401"
+      - "501"
+  tasks:
+    - name: Check VLANs
+      eos_command:
+        provider: "{{ v_provider_eapi }}"
+        commands: show vlan
+      register: command_output    
+
+    - name: Store VLAN numbers
+      set_fact:
+        vlan_output: "{{ command_output.stdout[0].vlans.keys() |list }}"
+
+    - name: Find unwanted VLANs
+      set_fact:
+        bad_vlans: "{{ vlan_output |difference(default_vlans) }}"
+
+    - name: Warn if unwanted VLANs are found
+      debug:
+        msg: "WARNING, wrong VLAN {{ item }} is configured"
+      with_items: "{{ bad_vlans }}"
+      when: bad_vlans != []

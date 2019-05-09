@@ -1,0 +1,21 @@
+---
+- name: Arista credentials test
+  hosts: arista
+  tasks:
+    - name: Test connection to Arista
+      eos_facts:
+        provider: "{{ v_provider_eapi }}"
+
+- name: Cisco credentials test
+  hosts: cisco
+  tasks:
+    - name: Test connection to Cisco
+      ios_facts:
+        provider: "{{ v_provider_ssh }}"
+
+- name: NXOS credentials test
+  hosts: nxos
+  tasks:
+    - name: Test connection to Nexus
+      nxos_facts:
+        provider: "{{ v_provider_nxapi }}" 
