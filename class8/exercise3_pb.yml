@@ -3,19 +3,44 @@
   hosts: pynet-sw7
   vars:
     default_vlans:
-      - "1"
-      - "2"
-      - "3"
-      - "4"
-      - "5"
-      - "6"
-      - "7"
-      - "101"
-      - "201"
-      - "301"
-      - "401"
-      - "501"
+      - vlan_id: "1"
+        vlan_name: default
+      - vlan_id: "2"
+        vlan_name: default
+      - vlan_id: "3"
+        vlan_name: default
+      - vlan_id: "4"
+        vlan_name: default
+      - vlan_id: "5"
+        vlan_name: default
+      - vlan_id: "6"
+        vlan_name: default
+      - vlan_id: "7"
+        vlan_name: default
+      - vlan_id: "101"
+        vlan_name: red
+      - vlan_id: "201"
+        vlan_name: blue
+      - vlan_id: "301"
+        vlan_name: green
+      - vlan_id: "401"
+        vlan_name: black
+      - vlan_id: "501"
+        vlan_name: white
   tasks:
+    - name: Generate config
+      template:
+        src: default_vlans.j2
+        dest: "./CFGS/{{ inventory_hostname }}-vlans.txt"
+
+    - name: Configure VLANs
+      napalm_install_config:
+        provider: "{{ v_napalm_creds }}"
+        config_file: "./CFGS/{{ inventory_hostname }}-vlans.txt"
+        commit_changes: True
+        replace_config: False
+        diff_file: "DIFFS/{{ inventory_hostname }}.txt"
+
     - name: Check VLANs
       eos_command:
         provider: "{{ v_provider_eapi }}"
@@ -24,11 +49,20 @@
 
     - name: Store VLAN numbers
       set_fact:
-        vlan_output: "{{ command_output.stdout[0].vlans.keys() |list }}"
+        vlan_output: "{{ command_output.stdout[0].vlans.keys() | list }}"
+
+    - name: Make list of default VLAN numbers
+      set_fact:
+        vlan_list: "{{ default_vlans | map(attribute='vlan_id') | list }}"
 
     - name: Find unwanted VLANs
       set_fact:
-        bad_vlans: "{{ vlan_output |difference(default_vlans) }}"
+        bad_vlans: "{{ vlan_output |difference(vlan_list) }}"
+
+    - name: Test that VLANs are correct
+      assert:
+        that:
+          - "bad_vlans == []"
 
     - name: Warn if unwanted VLANs are found
       debug:

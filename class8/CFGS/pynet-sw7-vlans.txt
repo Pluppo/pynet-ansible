@@ -1,0 +1,24 @@
+vlan 1
+ name default
+vlan 2
+ name default
+vlan 3
+ name default
+vlan 4
+ name default
+vlan 5
+ name default
+vlan 6
+ name default
+vlan 7
+ name default
+vlan 101
+ name red
+vlan 201
+ name blue
+vlan 301
+ name green
+vlan 401
+ name black
+vlan 501
+ name white

@@ -13486,3 +13486,3371 @@ Should be written as:
 2019-05-09 14:06:09,192 p=24085 u=eingeberg |  META: ran handlers
 2019-05-09 14:06:09,194 p=24085 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
 2019-05-09 14:06:09,194 p=24085 u=eingeberg |  pynet-sw7                  : ok=5    changed=0    unreachable=0    failed=0   
+2019-05-09 14:17:45,721 p=24316 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:17:45,721 p=24316 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:17:45,731 p=24316 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:17:45,732 p=24316 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:17:45,737 p=24316 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:17:46,010 p=24316 u=eingeberg |  PLAYBOOK: exercise3_pb.yml ***********************************************************************************************
+2019-05-09 14:17:46,010 p=24316 u=eingeberg |  1 plays in exercise3_pb.yml
+2019-05-09 14:17:46,058 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-05-09 14:17:46,064 p=24316 u=eingeberg |  PLAY [Check Arita VLANs] *************************************************************************************************
+2019-05-09 14:17:46,097 p=24316 u=eingeberg |  TASK [Gathering Facts] ***************************************************************************************************
+2019-05-09 14:17:46,097 p=24316 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:2
+2019-05-09 14:17:46,457 p=24316 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/system/setup.py
+2019-05-09 14:17:46,838 p=24316 u=eingeberg |  ok: [pynet-sw7]
+2019-05-09 14:17:46,839 p=24316 u=eingeberg |  META: ran handlers
+2019-05-09 14:17:46,857 p=24316 u=eingeberg |  TASK [Generate config] ***************************************************************************************************
+2019-05-09 14:17:46,857 p=24316 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:30
+2019-05-09 14:17:46,900 p=24316 u=eingeberg |  fatal: [pynet-sw7]: FAILED! => {
+    "changed": false,
+    "msg": "AnsibleUndefinedVariable: 'dict object' has no attribute 'vlan_name'"
+}
+2019-05-09 14:17:46,902 p=24316 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
+2019-05-09 14:17:46,902 p=24316 u=eingeberg |  pynet-sw7                  : ok=1    changed=0    unreachable=0    failed=1   
+2019-05-09 14:20:18,010 p=24407 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:20:18,010 p=24407 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:20:18,021 p=24407 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:20:18,021 p=24407 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:20:18,026 p=24407 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:20:18,305 p=24407 u=eingeberg |  PLAYBOOK: exercise3_pb.yml ***********************************************************************************************
+2019-05-09 14:20:18,305 p=24407 u=eingeberg |  1 plays in exercise3_pb.yml
+2019-05-09 14:20:18,353 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-05-09 14:20:18,359 p=24407 u=eingeberg |  PLAY [Check Arita VLANs] *************************************************************************************************
+2019-05-09 14:20:18,391 p=24407 u=eingeberg |  TASK [Gathering Facts] ***************************************************************************************************
+2019-05-09 14:20:18,392 p=24407 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:2
+2019-05-09 14:20:18,754 p=24407 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/system/setup.py
+2019-05-09 14:20:19,186 p=24407 u=eingeberg |  ok: [pynet-sw7]
+2019-05-09 14:20:19,187 p=24407 u=eingeberg |  META: ran handlers
+2019-05-09 14:20:19,204 p=24407 u=eingeberg |  TASK [Generate config] ***************************************************************************************************
+2019-05-09 14:20:19,204 p=24407 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:31
+2019-05-09 14:20:19,353 p=24407 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/stat.py
+2019-05-09 14:20:19,659 p=24407 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/copy.py
+2019-05-09 14:20:19,831 p=24407 u=eingeberg |  changed: [pynet-sw7] => {
+    "changed": true,
+    "checksum": "6847bd06a0552372923186d6988cee1b8a18f09f",
+    "dest": "./CFGS/pynet-sw7-vlans.txt",
+    "diff": [],
+    "gid": 708,
+    "group": "eingeberg",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "default_vlans.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "6847bd06a0552372923186d6988cee1b8a18f09f",
+            "content": null,
+            "delimiter": null,
+            "dest": "./CFGS/pynet-sw7-vlans.txt",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/home/eingeberg/.ansible/tmp/ansible-tmp-1557436819.2228262-174651606314084/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "61a75fc3a025815c93e2eefa149cdb67",
+    "mode": "0664",
+    "owner": "eingeberg",
+    "size": 249,
+    "src": "/home/eingeberg/.ansible/tmp/ansible-tmp-1557436819.2228262-174651606314084/source",
+    "state": "file",
+    "uid": 708
+}
+2019-05-09 14:20:19,846 p=24407 u=eingeberg |  TASK [Check VLANs] *******************************************************************************************************
+2019-05-09 14:20:19,846 p=24407 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:36
+2019-05-09 14:20:20,071 p=24407 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/network/eos/eos_command.py
+2019-05-09 14:20:21,307 p=24407 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "auth_pass": null,
+            "authorize": false,
+            "commands": [
+                "show vlan"
+            ],
+            "host": "arista7.lasthop.io",
+            "interval": 1,
+            "match": "all",
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "port": 443,
+            "provider": {
+                "auth_pass": null,
+                "authorize": false,
+                "host": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "port": 443,
+                "ssh_keyfile": null,
+                "timeout": 40,
+                "transport": "eapi",
+                "use_proxy": true,
+                "use_ssl": true,
+                "username": "pyclass",
+                "validate_certs": false
+            },
+            "retries": 10,
+            "ssh_keyfile": null,
+            "timeout": 40,
+            "transport": "eapi",
+            "url_password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "url_username": "pyclass",
+            "use_ssl": true,
+            "username": "pyclass",
+            "validate_certs": false,
+            "wait_for": null
+        }
+    },
+    "stdout": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0002",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0003",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0004",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0005",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0006",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0007",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ],
+    "stdout_lines": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0002",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0003",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0004",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0005",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0006",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0007",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ]
+}
+2019-05-09 14:20:21,323 p=24407 u=eingeberg |  TASK [Store VLAN numbers] ************************************************************************************************
+2019-05-09 14:20:21,323 p=24407 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:42
+2019-05-09 14:20:21,346 p=24407 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_output": [
+            "201",
+            "89",
+            "401",
+            "301",
+            "88",
+            "1",
+            "3",
+            "2",
+            "5",
+            "4",
+            "7",
+            "6",
+            "90",
+            "101",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:20:21,361 p=24407 u=eingeberg |  TASK [Find unwanted VLANs] ***********************************************************************************************
+2019-05-09 14:20:21,361 p=24407 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:46
+2019-05-09 14:20:21,382 p=24407 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "bad_vlans": [
+            "201",
+            "89",
+            "401",
+            "301",
+            "88",
+            "1",
+            "3",
+            "2",
+            "5",
+            "4",
+            "7",
+            "6",
+            "90",
+            "101",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:20:21,398 p=24407 u=eingeberg |  TASK [Warn if unwanted VLANs are found] **********************************************************************************
+2019-05-09 14:20:21,398 p=24407 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:50
+2019-05-09 14:20:21,434 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=201) => {
+    "msg": "WARNING, wrong VLAN 201 is configured"
+}
+2019-05-09 14:20:21,436 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=89) => {
+    "msg": "WARNING, wrong VLAN 89 is configured"
+}
+2019-05-09 14:20:21,443 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=401) => {
+    "msg": "WARNING, wrong VLAN 401 is configured"
+}
+2019-05-09 14:20:21,452 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=301) => {
+    "msg": "WARNING, wrong VLAN 301 is configured"
+}
+2019-05-09 14:20:21,459 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=88) => {
+    "msg": "WARNING, wrong VLAN 88 is configured"
+}
+2019-05-09 14:20:21,466 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=1) => {
+    "msg": "WARNING, wrong VLAN 1 is configured"
+}
+2019-05-09 14:20:21,474 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=3) => {
+    "msg": "WARNING, wrong VLAN 3 is configured"
+}
+2019-05-09 14:20:21,482 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=2) => {
+    "msg": "WARNING, wrong VLAN 2 is configured"
+}
+2019-05-09 14:20:21,490 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=5) => {
+    "msg": "WARNING, wrong VLAN 5 is configured"
+}
+2019-05-09 14:20:21,497 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=4) => {
+    "msg": "WARNING, wrong VLAN 4 is configured"
+}
+2019-05-09 14:20:21,504 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=7) => {
+    "msg": "WARNING, wrong VLAN 7 is configured"
+}
+2019-05-09 14:20:21,513 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=6) => {
+    "msg": "WARNING, wrong VLAN 6 is configured"
+}
+2019-05-09 14:20:21,521 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=90) => {
+    "msg": "WARNING, wrong VLAN 90 is configured"
+}
+2019-05-09 14:20:21,529 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=101) => {
+    "msg": "WARNING, wrong VLAN 101 is configured"
+}
+2019-05-09 14:20:21,535 p=24407 u=eingeberg |  ok: [pynet-sw7] => (item=501) => {
+    "msg": "WARNING, wrong VLAN 501 is configured"
+}
+2019-05-09 14:20:21,537 p=24407 u=eingeberg |  META: ran handlers
+2019-05-09 14:20:21,537 p=24407 u=eingeberg |  META: ran handlers
+2019-05-09 14:20:21,539 p=24407 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
+2019-05-09 14:20:21,539 p=24407 u=eingeberg |  pynet-sw7                  : ok=6    changed=1    unreachable=0    failed=0   
+2019-05-09 14:25:43,218 p=24577 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:25:43,218 p=24577 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:25:43,228 p=24577 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:25:43,229 p=24577 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:25:43,234 p=24577 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:25:43,506 p=24577 u=eingeberg |  PLAYBOOK: exercise3_pb.yml ***********************************************************************************************
+2019-05-09 14:25:43,506 p=24577 u=eingeberg |  1 plays in exercise3_pb.yml
+2019-05-09 14:25:43,554 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-05-09 14:25:43,560 p=24577 u=eingeberg |  PLAY [Check Arita VLANs] *************************************************************************************************
+2019-05-09 14:25:43,592 p=24577 u=eingeberg |  TASK [Gathering Facts] ***************************************************************************************************
+2019-05-09 14:25:43,593 p=24577 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:2
+2019-05-09 14:25:43,951 p=24577 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/system/setup.py
+2019-05-09 14:25:44,386 p=24577 u=eingeberg |  ok: [pynet-sw7]
+2019-05-09 14:25:44,386 p=24577 u=eingeberg |  META: ran handlers
+2019-05-09 14:25:44,403 p=24577 u=eingeberg |  TASK [Generate config] ***************************************************************************************************
+2019-05-09 14:25:44,404 p=24577 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:31
+2019-05-09 14:25:44,547 p=24577 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/stat.py
+2019-05-09 14:25:44,870 p=24577 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/file.py
+2019-05-09 14:25:45,050 p=24577 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "checksum": "6847bd06a0552372923186d6988cee1b8a18f09f",
+    "dest": "./CFGS/pynet-sw7-vlans.txt",
+    "diff": {
+        "after": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        },
+        "before": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        }
+    },
+    "gid": 708,
+    "group": "eingeberg",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": "default_vlans.j2",
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "dest": "./CFGS/pynet-sw7-vlans.txt",
+            "directory_mode": null,
+            "follow": false,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./CFGS/pynet-sw7-vlans.txt",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "file",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0664",
+    "owner": "eingeberg",
+    "path": "./CFGS/pynet-sw7-vlans.txt",
+    "size": 249,
+    "state": "file",
+    "uid": 708
+}
+2019-05-09 14:25:45,068 p=24577 u=eingeberg |  TASK [Check VLANs] *******************************************************************************************************
+2019-05-09 14:25:45,068 p=24577 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:36
+2019-05-09 14:25:45,288 p=24577 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/network/eos/eos_command.py
+2019-05-09 14:25:46,453 p=24577 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "auth_pass": null,
+            "authorize": false,
+            "commands": [
+                "show vlan"
+            ],
+            "host": "arista7.lasthop.io",
+            "interval": 1,
+            "match": "all",
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "port": 443,
+            "provider": {
+                "auth_pass": null,
+                "authorize": false,
+                "host": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "port": 443,
+                "ssh_keyfile": null,
+                "timeout": 40,
+                "transport": "eapi",
+                "use_proxy": true,
+                "use_ssl": true,
+                "username": "pyclass",
+                "validate_certs": false
+            },
+            "retries": 10,
+            "ssh_keyfile": null,
+            "timeout": 40,
+            "transport": "eapi",
+            "url_password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "url_username": "pyclass",
+            "use_ssl": true,
+            "username": "pyclass",
+            "validate_certs": false,
+            "wait_for": null
+        }
+    },
+    "stdout": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0002",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0003",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0004",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0005",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0006",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0007",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ],
+    "stdout_lines": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0002",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0003",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0004",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0005",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0006",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "VLAN0007",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ]
+}
+2019-05-09 14:25:46,469 p=24577 u=eingeberg |  TASK [Store VLAN numbers] ************************************************************************************************
+2019-05-09 14:25:46,469 p=24577 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:42
+2019-05-09 14:25:46,493 p=24577 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_output": [
+            "201",
+            "89",
+            "401",
+            "301",
+            "88",
+            "1",
+            "3",
+            "2",
+            "5",
+            "4",
+            "7",
+            "6",
+            "90",
+            "101",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:25:46,508 p=24577 u=eingeberg |  TASK [Make list of default VLAN numbers] *********************************************************************************
+2019-05-09 14:25:46,508 p=24577 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:46
+2019-05-09 14:25:46,530 p=24577 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_list": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "101",
+            "201",
+            "301",
+            "401",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:25:46,546 p=24577 u=eingeberg |  TASK [Find unwanted VLANs] ***********************************************************************************************
+2019-05-09 14:25:46,546 p=24577 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:50
+2019-05-09 14:25:46,568 p=24577 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "bad_vlans": [
+            "89",
+            "88",
+            "90"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:25:46,584 p=24577 u=eingeberg |  TASK [Warn if unwanted VLANs are found] **********************************************************************************
+2019-05-09 14:25:46,584 p=24577 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:54
+2019-05-09 14:25:46,619 p=24577 u=eingeberg |  ok: [pynet-sw7] => (item=89) => {
+    "msg": "WARNING, wrong VLAN 89 is configured"
+}
+2019-05-09 14:25:46,621 p=24577 u=eingeberg |  ok: [pynet-sw7] => (item=88) => {
+    "msg": "WARNING, wrong VLAN 88 is configured"
+}
+2019-05-09 14:25:46,629 p=24577 u=eingeberg |  ok: [pynet-sw7] => (item=90) => {
+    "msg": "WARNING, wrong VLAN 90 is configured"
+}
+2019-05-09 14:25:46,630 p=24577 u=eingeberg |  META: ran handlers
+2019-05-09 14:25:46,630 p=24577 u=eingeberg |  META: ran handlers
+2019-05-09 14:25:46,632 p=24577 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
+2019-05-09 14:25:46,632 p=24577 u=eingeberg |  pynet-sw7                  : ok=7    changed=0    unreachable=0    failed=0   
+2019-05-09 14:28:39,475 p=24717 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:28:39,476 p=24717 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:28:39,486 p=24717 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:28:39,486 p=24717 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:28:39,491 p=24717 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:28:39,601 p=24717 u=eingeberg |  ERROR! 'commit_changes' is not a valid attribute for a Task
+
+The error appears to have been in '/home/eingeberg/class8/exercise3_pb.yml': line 36, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: Configure VLANs
+      ^ here
+
+This error can be suppressed as a warning using the "invalid_task_attribute_failed" configuration
+2019-05-09 14:29:11,962 p=24765 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:29:11,962 p=24765 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:29:11,972 p=24765 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:29:11,972 p=24765 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:29:11,978 p=24765 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:29:12,250 p=24765 u=eingeberg |  PLAYBOOK: exercise3_pb.yml ***********************************************************************************************
+2019-05-09 14:29:12,250 p=24765 u=eingeberg |  1 plays in exercise3_pb.yml
+2019-05-09 14:29:12,298 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-05-09 14:29:12,304 p=24765 u=eingeberg |  PLAY [Check Arita VLANs] *************************************************************************************************
+2019-05-09 14:29:12,337 p=24765 u=eingeberg |  TASK [Gathering Facts] ***************************************************************************************************
+2019-05-09 14:29:12,337 p=24765 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:2
+2019-05-09 14:29:12,703 p=24765 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/system/setup.py
+2019-05-09 14:29:13,095 p=24765 u=eingeberg |  ok: [pynet-sw7]
+2019-05-09 14:29:13,096 p=24765 u=eingeberg |  META: ran handlers
+2019-05-09 14:29:13,113 p=24765 u=eingeberg |  TASK [Generate config] ***************************************************************************************************
+2019-05-09 14:29:13,114 p=24765 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:31
+2019-05-09 14:29:13,261 p=24765 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/stat.py
+2019-05-09 14:29:13,579 p=24765 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/file.py
+2019-05-09 14:29:13,749 p=24765 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "checksum": "6847bd06a0552372923186d6988cee1b8a18f09f",
+    "dest": "./CFGS/pynet-sw7-vlans.txt",
+    "diff": {
+        "after": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        },
+        "before": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        }
+    },
+    "gid": 708,
+    "group": "eingeberg",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": "default_vlans.j2",
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "dest": "./CFGS/pynet-sw7-vlans.txt",
+            "directory_mode": null,
+            "follow": false,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./CFGS/pynet-sw7-vlans.txt",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "file",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0664",
+    "owner": "eingeberg",
+    "path": "./CFGS/pynet-sw7-vlans.txt",
+    "size": 249,
+    "state": "file",
+    "uid": 708
+}
+2019-05-09 14:29:13,766 p=24765 u=eingeberg |  TASK [Configure VLANs] ***************************************************************************************************
+2019-05-09 14:29:13,766 p=24765 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:36
+2019-05-09 14:29:13,912 p=24765 u=eingeberg |  Using module file /home/eingeberg/napalm-ansible/napalm_ansible/modules/napalm_install_config.py
+2019-05-09 14:29:19,224 p=24765 u=eingeberg |  changed: [pynet-sw7] => {
+    "changed": true,
+    "invocation": {
+        "module_args": {
+            "archive_file": null,
+            "candidate_file": null,
+            "commit_changes": true,
+            "config": null,
+            "config_file": "./CFGS/pynet-sw7-vlans.txt",
+            "dev_os": "eos",
+            "diff_file": "DIFFS/pynet-sw7.txt",
+            "get_diffs": true,
+            "hostname": "arista7.lasthop.io",
+            "optional_args": null,
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "provider": {
+                "dev_os": "eos",
+                "hostname": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "timeout": 60,
+                "username": "pyclass"
+            },
+            "replace_config": false,
+            "timeout": 60,
+            "username": "pyclass"
+        }
+    },
+    "msg": "@@ -22,6 +22,7 @@\n clock timezone America/Los_Angeles\n !\n vlan 2-7\n+   name default\n !\n vlan 88\n    name bad88"
+}
+2019-05-09 14:29:19,240 p=24765 u=eingeberg |  TASK [Check VLANs] *******************************************************************************************************
+2019-05-09 14:29:19,240 p=24765 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:44
+2019-05-09 14:29:19,482 p=24765 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/network/eos/eos_command.py
+2019-05-09 14:29:20,645 p=24765 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "auth_pass": null,
+            "authorize": false,
+            "commands": [
+                "show vlan"
+            ],
+            "host": "arista7.lasthop.io",
+            "interval": 1,
+            "match": "all",
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "port": 443,
+            "provider": {
+                "auth_pass": null,
+                "authorize": false,
+                "host": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "port": 443,
+                "ssh_keyfile": null,
+                "timeout": 40,
+                "transport": "eapi",
+                "use_proxy": true,
+                "use_ssl": true,
+                "username": "pyclass",
+                "validate_certs": false
+            },
+            "retries": 10,
+            "ssh_keyfile": null,
+            "timeout": 40,
+            "transport": "eapi",
+            "url_password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "url_username": "pyclass",
+            "use_ssl": true,
+            "username": "pyclass",
+            "validate_certs": false,
+            "wait_for": null
+        }
+    },
+    "stdout": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ],
+    "stdout_lines": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ]
+}
+2019-05-09 14:29:20,661 p=24765 u=eingeberg |  TASK [Store VLAN numbers] ************************************************************************************************
+2019-05-09 14:29:20,662 p=24765 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:50
+2019-05-09 14:29:20,684 p=24765 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_output": [
+            "201",
+            "89",
+            "401",
+            "301",
+            "88",
+            "1",
+            "3",
+            "2",
+            "5",
+            "4",
+            "7",
+            "6",
+            "90",
+            "101",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:29:20,700 p=24765 u=eingeberg |  TASK [Make list of default VLAN numbers] *********************************************************************************
+2019-05-09 14:29:20,700 p=24765 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:54
+2019-05-09 14:29:20,722 p=24765 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_list": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "101",
+            "201",
+            "301",
+            "401",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:29:20,737 p=24765 u=eingeberg |  TASK [Find unwanted VLANs] ***********************************************************************************************
+2019-05-09 14:29:20,737 p=24765 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:58
+2019-05-09 14:29:20,758 p=24765 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "bad_vlans": [
+            "89",
+            "88",
+            "90"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:29:20,775 p=24765 u=eingeberg |  TASK [Warn if unwanted VLANs are found] **********************************************************************************
+2019-05-09 14:29:20,775 p=24765 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:62
+2019-05-09 14:29:20,811 p=24765 u=eingeberg |  ok: [pynet-sw7] => (item=89) => {
+    "msg": "WARNING, wrong VLAN 89 is configured"
+}
+2019-05-09 14:29:20,812 p=24765 u=eingeberg |  ok: [pynet-sw7] => (item=88) => {
+    "msg": "WARNING, wrong VLAN 88 is configured"
+}
+2019-05-09 14:29:20,819 p=24765 u=eingeberg |  ok: [pynet-sw7] => (item=90) => {
+    "msg": "WARNING, wrong VLAN 90 is configured"
+}
+2019-05-09 14:29:20,819 p=24765 u=eingeberg |  META: ran handlers
+2019-05-09 14:29:20,820 p=24765 u=eingeberg |  META: ran handlers
+2019-05-09 14:29:20,822 p=24765 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
+2019-05-09 14:29:20,822 p=24765 u=eingeberg |  pynet-sw7                  : ok=8    changed=1    unreachable=0    failed=0   
+2019-05-09 14:29:41,402 p=24890 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:29:41,402 p=24890 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:29:41,412 p=24890 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:29:41,412 p=24890 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:29:41,418 p=24890 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:29:41,687 p=24890 u=eingeberg |  PLAYBOOK: exercise3_pb.yml ***********************************************************************************************
+2019-05-09 14:29:41,687 p=24890 u=eingeberg |  1 plays in exercise3_pb.yml
+2019-05-09 14:29:41,735 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-05-09 14:29:41,742 p=24890 u=eingeberg |  PLAY [Check Arita VLANs] *************************************************************************************************
+2019-05-09 14:29:41,774 p=24890 u=eingeberg |  TASK [Gathering Facts] ***************************************************************************************************
+2019-05-09 14:29:41,774 p=24890 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:2
+2019-05-09 14:29:42,144 p=24890 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/system/setup.py
+2019-05-09 14:29:42,515 p=24890 u=eingeberg |  ok: [pynet-sw7]
+2019-05-09 14:29:42,515 p=24890 u=eingeberg |  META: ran handlers
+2019-05-09 14:29:42,532 p=24890 u=eingeberg |  TASK [Generate config] ***************************************************************************************************
+2019-05-09 14:29:42,532 p=24890 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:31
+2019-05-09 14:29:42,677 p=24890 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/stat.py
+2019-05-09 14:29:42,989 p=24890 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/file.py
+2019-05-09 14:29:43,158 p=24890 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "checksum": "6847bd06a0552372923186d6988cee1b8a18f09f",
+    "dest": "./CFGS/pynet-sw7-vlans.txt",
+    "diff": {
+        "after": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        },
+        "before": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        }
+    },
+    "gid": 708,
+    "group": "eingeberg",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": "default_vlans.j2",
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "dest": "./CFGS/pynet-sw7-vlans.txt",
+            "directory_mode": null,
+            "follow": false,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./CFGS/pynet-sw7-vlans.txt",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "file",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0664",
+    "owner": "eingeberg",
+    "path": "./CFGS/pynet-sw7-vlans.txt",
+    "size": 249,
+    "state": "file",
+    "uid": 708
+}
+2019-05-09 14:29:43,174 p=24890 u=eingeberg |  TASK [Configure VLANs] ***************************************************************************************************
+2019-05-09 14:29:43,174 p=24890 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:36
+2019-05-09 14:29:43,324 p=24890 u=eingeberg |  Using module file /home/eingeberg/napalm-ansible/napalm_ansible/modules/napalm_install_config.py
+2019-05-09 14:29:47,373 p=24890 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "archive_file": null,
+            "candidate_file": null,
+            "commit_changes": true,
+            "config": null,
+            "config_file": "./CFGS/pynet-sw7-vlans.txt",
+            "dev_os": "eos",
+            "diff_file": "DIFFS/pynet-sw7.txt",
+            "get_diffs": true,
+            "hostname": "arista7.lasthop.io",
+            "optional_args": null,
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "provider": {
+                "dev_os": "eos",
+                "hostname": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "timeout": 60,
+                "username": "pyclass"
+            },
+            "replace_config": false,
+            "timeout": 60,
+            "username": "pyclass"
+        }
+    },
+    "msg": ""
+}
+2019-05-09 14:29:47,389 p=24890 u=eingeberg |  TASK [Check VLANs] *******************************************************************************************************
+2019-05-09 14:29:47,389 p=24890 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:44
+2019-05-09 14:29:47,637 p=24890 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/network/eos/eos_command.py
+2019-05-09 14:29:48,786 p=24890 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "auth_pass": null,
+            "authorize": false,
+            "commands": [
+                "show vlan"
+            ],
+            "host": "arista7.lasthop.io",
+            "interval": 1,
+            "match": "all",
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "port": 443,
+            "provider": {
+                "auth_pass": null,
+                "authorize": false,
+                "host": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "port": 443,
+                "ssh_keyfile": null,
+                "timeout": 40,
+                "transport": "eapi",
+                "use_proxy": true,
+                "use_ssl": true,
+                "username": "pyclass",
+                "validate_certs": false
+            },
+            "retries": 10,
+            "ssh_keyfile": null,
+            "timeout": 40,
+            "transport": "eapi",
+            "url_password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "url_username": "pyclass",
+            "use_ssl": true,
+            "username": "pyclass",
+            "validate_certs": false,
+            "wait_for": null
+        }
+    },
+    "stdout": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ],
+    "stdout_lines": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ]
+}
+2019-05-09 14:29:48,803 p=24890 u=eingeberg |  TASK [Store VLAN numbers] ************************************************************************************************
+2019-05-09 14:29:48,803 p=24890 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:50
+2019-05-09 14:29:48,826 p=24890 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_output": [
+            "201",
+            "89",
+            "401",
+            "301",
+            "88",
+            "1",
+            "3",
+            "2",
+            "5",
+            "4",
+            "7",
+            "6",
+            "90",
+            "101",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:29:48,841 p=24890 u=eingeberg |  TASK [Make list of default VLAN numbers] *********************************************************************************
+2019-05-09 14:29:48,841 p=24890 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:54
+2019-05-09 14:29:48,862 p=24890 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_list": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "101",
+            "201",
+            "301",
+            "401",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:29:48,878 p=24890 u=eingeberg |  TASK [Find unwanted VLANs] ***********************************************************************************************
+2019-05-09 14:29:48,879 p=24890 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:58
+2019-05-09 14:29:48,900 p=24890 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "bad_vlans": [
+            "89",
+            "88",
+            "90"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:29:48,916 p=24890 u=eingeberg |  TASK [Warn if unwanted VLANs are found] **********************************************************************************
+2019-05-09 14:29:48,916 p=24890 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:62
+2019-05-09 14:29:48,950 p=24890 u=eingeberg |  ok: [pynet-sw7] => (item=89) => {
+    "msg": "WARNING, wrong VLAN 89 is configured"
+}
+2019-05-09 14:29:48,952 p=24890 u=eingeberg |  ok: [pynet-sw7] => (item=88) => {
+    "msg": "WARNING, wrong VLAN 88 is configured"
+}
+2019-05-09 14:29:48,959 p=24890 u=eingeberg |  ok: [pynet-sw7] => (item=90) => {
+    "msg": "WARNING, wrong VLAN 90 is configured"
+}
+2019-05-09 14:29:48,960 p=24890 u=eingeberg |  META: ran handlers
+2019-05-09 14:29:48,960 p=24890 u=eingeberg |  META: ran handlers
+2019-05-09 14:29:48,962 p=24890 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
+2019-05-09 14:29:48,962 p=24890 u=eingeberg |  pynet-sw7                  : ok=8    changed=0    unreachable=0    failed=0   
+2019-05-09 14:31:32,761 p=25037 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:31:32,761 p=25037 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:31:32,771 p=25037 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:31:32,771 p=25037 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:31:32,776 p=25037 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:31:33,043 p=25037 u=eingeberg |  PLAYBOOK: exercise3_pb.yml ***********************************************************************************************
+2019-05-09 14:31:33,044 p=25037 u=eingeberg |  1 plays in exercise3_pb.yml
+2019-05-09 14:31:33,090 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-05-09 14:31:33,096 p=25037 u=eingeberg |  PLAY [Check Arita VLANs] *************************************************************************************************
+2019-05-09 14:31:33,129 p=25037 u=eingeberg |  TASK [Gathering Facts] ***************************************************************************************************
+2019-05-09 14:31:33,130 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:2
+2019-05-09 14:31:33,499 p=25037 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/system/setup.py
+2019-05-09 14:31:33,865 p=25037 u=eingeberg |  ok: [pynet-sw7]
+2019-05-09 14:31:33,865 p=25037 u=eingeberg |  META: ran handlers
+2019-05-09 14:31:33,882 p=25037 u=eingeberg |  TASK [Generate config] ***************************************************************************************************
+2019-05-09 14:31:33,883 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:31
+2019-05-09 14:31:34,026 p=25037 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/stat.py
+2019-05-09 14:31:34,349 p=25037 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/file.py
+2019-05-09 14:31:34,520 p=25037 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "checksum": "6847bd06a0552372923186d6988cee1b8a18f09f",
+    "dest": "./CFGS/pynet-sw7-vlans.txt",
+    "diff": {
+        "after": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        },
+        "before": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        }
+    },
+    "gid": 708,
+    "group": "eingeberg",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": "default_vlans.j2",
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "dest": "./CFGS/pynet-sw7-vlans.txt",
+            "directory_mode": null,
+            "follow": false,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./CFGS/pynet-sw7-vlans.txt",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "file",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0664",
+    "owner": "eingeberg",
+    "path": "./CFGS/pynet-sw7-vlans.txt",
+    "size": 249,
+    "state": "file",
+    "uid": 708
+}
+2019-05-09 14:31:34,537 p=25037 u=eingeberg |  TASK [Configure VLANs] ***************************************************************************************************
+2019-05-09 14:31:34,537 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:36
+2019-05-09 14:31:34,681 p=25037 u=eingeberg |  Using module file /home/eingeberg/napalm-ansible/napalm_ansible/modules/napalm_install_config.py
+2019-05-09 14:31:38,594 p=25037 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "archive_file": null,
+            "candidate_file": null,
+            "commit_changes": true,
+            "config": null,
+            "config_file": "./CFGS/pynet-sw7-vlans.txt",
+            "dev_os": "eos",
+            "diff_file": "DIFFS/pynet-sw7.txt",
+            "get_diffs": true,
+            "hostname": "arista7.lasthop.io",
+            "optional_args": null,
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "provider": {
+                "dev_os": "eos",
+                "hostname": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "timeout": 60,
+                "username": "pyclass"
+            },
+            "replace_config": false,
+            "timeout": 60,
+            "username": "pyclass"
+        }
+    },
+    "msg": ""
+}
+2019-05-09 14:31:38,610 p=25037 u=eingeberg |  TASK [Check VLANs] *******************************************************************************************************
+2019-05-09 14:31:38,610 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:44
+2019-05-09 14:31:38,862 p=25037 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/network/eos/eos_command.py
+2019-05-09 14:31:40,069 p=25037 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "auth_pass": null,
+            "authorize": false,
+            "commands": [
+                "show vlan"
+            ],
+            "host": "arista7.lasthop.io",
+            "interval": 1,
+            "match": "all",
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "port": 443,
+            "provider": {
+                "auth_pass": null,
+                "authorize": false,
+                "host": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "port": 443,
+                "ssh_keyfile": null,
+                "timeout": 40,
+                "transport": "eapi",
+                "use_proxy": true,
+                "use_ssl": true,
+                "username": "pyclass",
+                "validate_certs": false
+            },
+            "retries": 10,
+            "ssh_keyfile": null,
+            "timeout": 40,
+            "transport": "eapi",
+            "url_password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "url_username": "pyclass",
+            "use_ssl": true,
+            "username": "pyclass",
+            "validate_certs": false,
+            "wait_for": null
+        }
+    },
+    "stdout": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ],
+    "stdout_lines": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ]
+}
+2019-05-09 14:31:40,086 p=25037 u=eingeberg |  TASK [Store VLAN numbers] ************************************************************************************************
+2019-05-09 14:31:40,086 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:50
+2019-05-09 14:31:40,109 p=25037 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_output": [
+            "201",
+            "89",
+            "401",
+            "301",
+            "88",
+            "1",
+            "3",
+            "2",
+            "5",
+            "4",
+            "7",
+            "6",
+            "90",
+            "101",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:31:40,125 p=25037 u=eingeberg |  TASK [Make list of default VLAN numbers] *********************************************************************************
+2019-05-09 14:31:40,125 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:54
+2019-05-09 14:31:40,148 p=25037 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_list": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "101",
+            "201",
+            "301",
+            "401",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:31:40,162 p=25037 u=eingeberg |  TASK [Find unwanted VLANs] ***********************************************************************************************
+2019-05-09 14:31:40,163 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:58
+2019-05-09 14:31:40,183 p=25037 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "bad_vlans": [
+            "89",
+            "88",
+            "90"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:31:40,200 p=25037 u=eingeberg |  TASK [Warn if unwanted VLANs are found] **********************************************************************************
+2019-05-09 14:31:40,200 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:62
+2019-05-09 14:31:40,235 p=25037 u=eingeberg |  ok: [pynet-sw7] => (item=89) => {
+    "msg": "WARNING, wrong VLAN 89 is configured"
+}
+2019-05-09 14:31:40,237 p=25037 u=eingeberg |  ok: [pynet-sw7] => (item=88) => {
+    "msg": "WARNING, wrong VLAN 88 is configured"
+}
+2019-05-09 14:31:40,245 p=25037 u=eingeberg |  ok: [pynet-sw7] => (item=90) => {
+    "msg": "WARNING, wrong VLAN 90 is configured"
+}
+2019-05-09 14:31:40,261 p=25037 u=eingeberg |  TASK [Test that VLANs are correct] ***************************************************************************************
+2019-05-09 14:31:40,261 p=25037 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:68
+2019-05-09 14:31:40,284 p=25037 u=eingeberg |  fatal: [pynet-sw7]: FAILED! => {
+    "assertion": "bad_vlans == []",
+    "changed": false,
+    "evaluated_to": false,
+    "msg": "Assertion failed"
+}
+2019-05-09 14:31:40,285 p=25037 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
+2019-05-09 14:31:40,285 p=25037 u=eingeberg |  pynet-sw7                  : ok=8    changed=0    unreachable=0    failed=1   
+2019-05-09 14:32:13,384 p=25168 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:32:13,384 p=25168 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:32:13,394 p=25168 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:32:13,395 p=25168 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:32:13,400 p=25168 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:32:13,665 p=25168 u=eingeberg |  PLAYBOOK: exercise3_pb.yml ***********************************************************************************************
+2019-05-09 14:32:13,665 p=25168 u=eingeberg |  1 plays in exercise3_pb.yml
+2019-05-09 14:32:13,712 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-05-09 14:32:13,718 p=25168 u=eingeberg |  PLAY [Check Arita VLANs] *************************************************************************************************
+2019-05-09 14:32:13,750 p=25168 u=eingeberg |  TASK [Gathering Facts] ***************************************************************************************************
+2019-05-09 14:32:13,750 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:2
+2019-05-09 14:32:14,110 p=25168 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/system/setup.py
+2019-05-09 14:32:14,476 p=25168 u=eingeberg |  ok: [pynet-sw7]
+2019-05-09 14:32:14,477 p=25168 u=eingeberg |  META: ran handlers
+2019-05-09 14:32:14,494 p=25168 u=eingeberg |  TASK [Generate config] ***************************************************************************************************
+2019-05-09 14:32:14,494 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:31
+2019-05-09 14:32:14,639 p=25168 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/stat.py
+2019-05-09 14:32:14,954 p=25168 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/file.py
+2019-05-09 14:32:15,131 p=25168 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "checksum": "6847bd06a0552372923186d6988cee1b8a18f09f",
+    "dest": "./CFGS/pynet-sw7-vlans.txt",
+    "diff": {
+        "after": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        },
+        "before": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        }
+    },
+    "gid": 708,
+    "group": "eingeberg",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": "default_vlans.j2",
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "dest": "./CFGS/pynet-sw7-vlans.txt",
+            "directory_mode": null,
+            "follow": false,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./CFGS/pynet-sw7-vlans.txt",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "file",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0664",
+    "owner": "eingeberg",
+    "path": "./CFGS/pynet-sw7-vlans.txt",
+    "size": 249,
+    "state": "file",
+    "uid": 708
+}
+2019-05-09 14:32:15,148 p=25168 u=eingeberg |  TASK [Configure VLANs] ***************************************************************************************************
+2019-05-09 14:32:15,148 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:36
+2019-05-09 14:32:15,291 p=25168 u=eingeberg |  Using module file /home/eingeberg/napalm-ansible/napalm_ansible/modules/napalm_install_config.py
+2019-05-09 14:32:19,215 p=25168 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "archive_file": null,
+            "candidate_file": null,
+            "commit_changes": true,
+            "config": null,
+            "config_file": "./CFGS/pynet-sw7-vlans.txt",
+            "dev_os": "eos",
+            "diff_file": "DIFFS/pynet-sw7.txt",
+            "get_diffs": true,
+            "hostname": "arista7.lasthop.io",
+            "optional_args": null,
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "provider": {
+                "dev_os": "eos",
+                "hostname": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "timeout": 60,
+                "username": "pyclass"
+            },
+            "replace_config": false,
+            "timeout": 60,
+            "username": "pyclass"
+        }
+    },
+    "msg": ""
+}
+2019-05-09 14:32:19,230 p=25168 u=eingeberg |  TASK [Check VLANs] *******************************************************************************************************
+2019-05-09 14:32:19,230 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:44
+2019-05-09 14:32:19,471 p=25168 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/network/eos/eos_command.py
+2019-05-09 14:32:20,576 p=25168 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "auth_pass": null,
+            "authorize": false,
+            "commands": [
+                "show vlan"
+            ],
+            "host": "arista7.lasthop.io",
+            "interval": 1,
+            "match": "all",
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "port": 443,
+            "provider": {
+                "auth_pass": null,
+                "authorize": false,
+                "host": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "port": 443,
+                "ssh_keyfile": null,
+                "timeout": 40,
+                "transport": "eapi",
+                "use_proxy": true,
+                "use_ssl": true,
+                "username": "pyclass",
+                "validate_certs": false
+            },
+            "retries": 10,
+            "ssh_keyfile": null,
+            "timeout": 40,
+            "transport": "eapi",
+            "url_password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "url_username": "pyclass",
+            "use_ssl": true,
+            "username": "pyclass",
+            "validate_certs": false,
+            "wait_for": null
+        }
+    },
+    "stdout": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ],
+    "stdout_lines": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ]
+}
+2019-05-09 14:32:20,593 p=25168 u=eingeberg |  TASK [Store VLAN numbers] ************************************************************************************************
+2019-05-09 14:32:20,593 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:50
+2019-05-09 14:32:20,616 p=25168 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_output": [
+            "201",
+            "89",
+            "401",
+            "301",
+            "88",
+            "1",
+            "3",
+            "2",
+            "5",
+            "4",
+            "7",
+            "6",
+            "90",
+            "101",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:32:20,632 p=25168 u=eingeberg |  TASK [Make list of default VLAN numbers] *********************************************************************************
+2019-05-09 14:32:20,632 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:54
+2019-05-09 14:32:20,653 p=25168 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_list": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "101",
+            "201",
+            "301",
+            "401",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:32:20,668 p=25168 u=eingeberg |  TASK [Find unwanted VLANs] ***********************************************************************************************
+2019-05-09 14:32:20,669 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:58
+2019-05-09 14:32:20,689 p=25168 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "bad_vlans": [
+            "89",
+            "88",
+            "90"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:32:20,705 p=25168 u=eingeberg |  TASK [Warn if unwanted VLANs are found] **********************************************************************************
+2019-05-09 14:32:20,706 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:62
+2019-05-09 14:32:20,740 p=25168 u=eingeberg |  ok: [pynet-sw7] => (item=89) => {
+    "msg": "WARNING, wrong VLAN 89 is configured"
+}
+2019-05-09 14:32:20,743 p=25168 u=eingeberg |  ok: [pynet-sw7] => (item=88) => {
+    "msg": "WARNING, wrong VLAN 88 is configured"
+}
+2019-05-09 14:32:20,749 p=25168 u=eingeberg |  ok: [pynet-sw7] => (item=90) => {
+    "msg": "WARNING, wrong VLAN 90 is configured"
+}
+2019-05-09 14:32:20,765 p=25168 u=eingeberg |  TASK [Test that VLANs are correct] ***************************************************************************************
+2019-05-09 14:32:20,765 p=25168 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:68
+2019-05-09 14:32:20,786 p=25168 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+2019-05-09 14:32:20,787 p=25168 u=eingeberg |  META: ran handlers
+2019-05-09 14:32:20,787 p=25168 u=eingeberg |  META: ran handlers
+2019-05-09 14:32:20,789 p=25168 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
+2019-05-09 14:32:20,790 p=25168 u=eingeberg |  pynet-sw7                  : ok=9    changed=0    unreachable=0    failed=0   
+2019-05-09 14:32:54,627 p=25299 u=eingeberg |  ansible-playbook 2.7.6
+  config file = /home/eingeberg/.ansible.cfg
+  configured module search path = ['/home/eingeberg/napalm-ansible/napalm_ansible/modules', '/home/eingeberg/ansible-extras/ntc-ansible/library']
+  ansible python module location = /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible
+  executable location = /home/eingeberg/VENV/py3_venv/bin/ansible-playbook
+  python version = 3.6.8 (default, Mar 18 2019, 18:57:19) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-05-09 14:32:54,628 p=25299 u=eingeberg |  Using /home/eingeberg/.ansible.cfg as config file
+2019-05-09 14:32:54,638 p=25299 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+2019-05-09 14:32:54,638 p=25299 u=eingeberg |  /home/eingeberg/ansible-hosts did not meet script requirements, check plugin documentation if this is unexpected
+2019-05-09 14:32:54,643 p=25299 u=eingeberg |  Parsed /home/eingeberg/ansible-hosts inventory source with ini plugin
+2019-05-09 14:32:54,918 p=25299 u=eingeberg |  PLAYBOOK: exercise3_pb.yml ***********************************************************************************************
+2019-05-09 14:32:54,918 p=25299 u=eingeberg |  1 plays in exercise3_pb.yml
+2019-05-09 14:32:54,966 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-05-09 14:32:54,972 p=25299 u=eingeberg |  PLAY [Check Arita VLANs] *************************************************************************************************
+2019-05-09 14:32:55,005 p=25299 u=eingeberg |  TASK [Gathering Facts] ***************************************************************************************************
+2019-05-09 14:32:55,005 p=25299 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:2
+2019-05-09 14:32:55,374 p=25299 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/system/setup.py
+2019-05-09 14:32:55,849 p=25299 u=eingeberg |  ok: [pynet-sw7]
+2019-05-09 14:32:55,849 p=25299 u=eingeberg |  META: ran handlers
+2019-05-09 14:32:55,867 p=25299 u=eingeberg |  TASK [Generate config] ***************************************************************************************************
+2019-05-09 14:32:55,868 p=25299 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:31
+2019-05-09 14:32:56,011 p=25299 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/stat.py
+2019-05-09 14:32:56,329 p=25299 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/files/file.py
+2019-05-09 14:32:56,501 p=25299 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "checksum": "6847bd06a0552372923186d6988cee1b8a18f09f",
+    "dest": "./CFGS/pynet-sw7-vlans.txt",
+    "diff": {
+        "after": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        },
+        "before": {
+            "path": "./CFGS/pynet-sw7-vlans.txt"
+        }
+    },
+    "gid": 708,
+    "group": "eingeberg",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": "default_vlans.j2",
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "dest": "./CFGS/pynet-sw7-vlans.txt",
+            "directory_mode": null,
+            "follow": false,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./CFGS/pynet-sw7-vlans.txt",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "file",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0664",
+    "owner": "eingeberg",
+    "path": "./CFGS/pynet-sw7-vlans.txt",
+    "size": 249,
+    "state": "file",
+    "uid": 708
+}
+2019-05-09 14:32:56,517 p=25299 u=eingeberg |  TASK [Configure VLANs] ***************************************************************************************************
+2019-05-09 14:32:56,518 p=25299 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:36
+2019-05-09 14:32:56,662 p=25299 u=eingeberg |  Using module file /home/eingeberg/napalm-ansible/napalm_ansible/modules/napalm_install_config.py
+2019-05-09 14:33:00,553 p=25299 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "archive_file": null,
+            "candidate_file": null,
+            "commit_changes": true,
+            "config": null,
+            "config_file": "./CFGS/pynet-sw7-vlans.txt",
+            "dev_os": "eos",
+            "diff_file": "DIFFS/pynet-sw7.txt",
+            "get_diffs": true,
+            "hostname": "arista7.lasthop.io",
+            "optional_args": null,
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "provider": {
+                "dev_os": "eos",
+                "hostname": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "timeout": 60,
+                "username": "pyclass"
+            },
+            "replace_config": false,
+            "timeout": 60,
+            "username": "pyclass"
+        }
+    },
+    "msg": ""
+}
+2019-05-09 14:33:00,568 p=25299 u=eingeberg |  TASK [Check VLANs] *******************************************************************************************************
+2019-05-09 14:33:00,569 p=25299 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:44
+2019-05-09 14:33:00,808 p=25299 u=eingeberg |  Using module file /home/eingeberg/VENV/py3_venv/local/lib/python3.6/site-packages/ansible/modules/network/eos/eos_command.py
+2019-05-09 14:33:02,092 p=25299 u=eingeberg |  ok: [pynet-sw7] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "auth_pass": null,
+            "authorize": false,
+            "commands": [
+                "show vlan"
+            ],
+            "host": "arista7.lasthop.io",
+            "interval": 1,
+            "match": "all",
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "port": 443,
+            "provider": {
+                "auth_pass": null,
+                "authorize": false,
+                "host": "arista7.lasthop.io",
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+                "port": 443,
+                "ssh_keyfile": null,
+                "timeout": 40,
+                "transport": "eapi",
+                "use_proxy": true,
+                "use_ssl": true,
+                "username": "pyclass",
+                "validate_certs": false
+            },
+            "retries": 10,
+            "ssh_keyfile": null,
+            "timeout": 40,
+            "transport": "eapi",
+            "url_password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "url_username": "pyclass",
+            "use_ssl": true,
+            "username": "pyclass",
+            "validate_certs": false,
+            "wait_for": null
+        }
+    },
+    "stdout": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ],
+    "stdout_lines": [
+        {
+            "sourceDetail": "",
+            "vlans": {
+                "1": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Cpu": {
+                            "privatePromoted": false
+                        },
+                        "Ethernet1": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "101": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "red",
+                    "status": "active"
+                },
+                "2": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet2": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "201": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "blue",
+                    "status": "active"
+                },
+                "3": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet3": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "301": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "green",
+                    "status": "active"
+                },
+                "4": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet4": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "401": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "black",
+                    "status": "active"
+                },
+                "5": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet5": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "501": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "white",
+                    "status": "active"
+                },
+                "6": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet6": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "7": {
+                    "dynamic": false,
+                    "interfaces": {
+                        "Ethernet7": {
+                            "privatePromoted": false
+                        }
+                    },
+                    "name": "default",
+                    "status": "active"
+                },
+                "88": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad88",
+                    "status": "active"
+                },
+                "89": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad89",
+                    "status": "active"
+                },
+                "90": {
+                    "dynamic": false,
+                    "interfaces": {},
+                    "name": "bad90",
+                    "status": "active"
+                }
+            }
+        }
+    ]
+}
+2019-05-09 14:33:02,109 p=25299 u=eingeberg |  TASK [Store VLAN numbers] ************************************************************************************************
+2019-05-09 14:33:02,109 p=25299 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:50
+2019-05-09 14:33:02,133 p=25299 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_output": [
+            "201",
+            "89",
+            "401",
+            "301",
+            "88",
+            "1",
+            "3",
+            "2",
+            "5",
+            "4",
+            "7",
+            "6",
+            "90",
+            "101",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:33:02,147 p=25299 u=eingeberg |  TASK [Make list of default VLAN numbers] *********************************************************************************
+2019-05-09 14:33:02,148 p=25299 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:54
+2019-05-09 14:33:02,170 p=25299 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "vlan_list": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "101",
+            "201",
+            "301",
+            "401",
+            "501"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:33:02,185 p=25299 u=eingeberg |  TASK [Find unwanted VLANs] ***********************************************************************************************
+2019-05-09 14:33:02,185 p=25299 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:58
+2019-05-09 14:33:02,206 p=25299 u=eingeberg |  ok: [pynet-sw7] => {
+    "ansible_facts": {
+        "bad_vlans": [
+            "89",
+            "88",
+            "90"
+        ]
+    },
+    "changed": false
+}
+2019-05-09 14:33:02,223 p=25299 u=eingeberg |  TASK [Test that VLANs are correct] ***************************************************************************************
+2019-05-09 14:33:02,223 p=25299 u=eingeberg |  task path: /home/eingeberg/class8/exercise3_pb.yml:62
+2019-05-09 14:33:02,245 p=25299 u=eingeberg |  fatal: [pynet-sw7]: FAILED! => {
+    "assertion": "bad_vlans == []",
+    "changed": false,
+    "evaluated_to": false,
+    "msg": "Assertion failed"
+}
+2019-05-09 14:33:02,248 p=25299 u=eingeberg |  PLAY RECAP ***************************************************************************************************************
+2019-05-09 14:33:02,248 p=25299 u=eingeberg |  pynet-sw7                  : ok=7    changed=0    unreachable=0    failed=1   

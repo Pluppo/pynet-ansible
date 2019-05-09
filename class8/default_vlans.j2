@@ -1,0 +1,4 @@
+{% for vlan in default_vlans %}
+vlan {{ vlan.vlan_id }}
+ name {{ vlan.vlan_name }}
+{% endfor %}
