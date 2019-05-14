@@ -1,0 +1,12 @@
+---
+- name: Get ios_facts
+  hosts: cisco
+  gather_facts: no
+
+  tasks:
+  - name: Run ios_facts task
+    ios_facts:
+
+  - name: Print IPv4 addresses
+    debug:
+      var: ansible_net_all_ipv4_addresses

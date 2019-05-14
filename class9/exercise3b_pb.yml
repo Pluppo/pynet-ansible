@@ -1,0 +1,11 @@
+---
+- name: Arista configue vlan
+  hosts: arista
+  gather_facts: no
+
+  tasks:
+  - name: Configure vlan 123
+    eos_config:
+      lines:
+        - name c9test
+      parents: vlan 123

@@ -1,0 +1,9 @@
+---
+- name: Get show run
+  hosts: pynet-rtr1
+  gather_facts: no
+
+  tasks:
+  - name: Execute show run command
+    ios_command:
+      commands: show run

@@ -1,0 +1,7 @@
+---
+- name: Juniper facts using netconf
+  hosts: juniper
+  gather_facts: no
+  tasks:
+  - junos_facts:
+      gather_subset: '!hardware'      #exclude hardware
